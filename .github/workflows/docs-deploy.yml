@@ -19,7 +19,7 @@ jobs:
         python -m pip install mkdocs
     - name: Install mkdocs-material
       run: |
-        python -m pip install mkdocs-material mkdocstrings mkdocstrings_handlers
+        python -m pip install mkdocs-material 'mkdocstrings[python]'
     - name: Publish docs
       run: |
         mkdocs gh-deploy --force
